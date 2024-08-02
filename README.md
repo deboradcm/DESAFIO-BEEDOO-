@@ -19,3 +19,4 @@ Critérios de Aceitação:
 
 *  As evidências dos testes estão no formato MP4 diponíveis em [Evidencias_testes_cadastro_cursos](https://drive.google.com/drive/folders/1JGjZH-sndG1ZcPUy0zZ9iW4hUZMRe5qc?usp=sharing).
 
+* O passo-a-passo para execução de cada caso de teste esta dísponível em [Passo_a_passo_execução_caso_de_testes](https://docs.google.com/document/d/1nelHOfyhvDeSziBeJ74c3qIh2a0NvcLkYMbjiEE9M7Q/edit?usp=sharing)
