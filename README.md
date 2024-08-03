@@ -1,4 +1,4 @@
-# DESAFIO-BEEDOO-
+# DESAFIO-BEEDOO
 
 ## História de Usuário
 
