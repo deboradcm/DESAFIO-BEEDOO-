@@ -52,11 +52,11 @@ Critérios de Aceitação:
 
 Casos de Teste em Gherkin
 
-* Os casos de teste foram escritos em Gherkin e estão disponíveis no arquivo [Casos_de_Testes_Exclusão_de_Curso](https://docs.google.com/spreadsheets/d/1h6Naz-2Gqw3Zp-Ke-nUdtrQsDuFq6QVWJcFdLhnJjQ8/edit?usp=sharing). Este arquivo inclui todos os cenários de sucesso e erro identificados para o módulo de curso.
+* Os casos de teste foram escritos em Gherkin e estão disponíveis no arquivo [Casos_de_Testes_Listar_de_Curso](https://docs.google.com/spreadsheets/d/1qQVKDGRN0Pkcw4FzLFVROJJKLeWl3CPV1O8jndQ6hVs/edit?usp=sharing). Este arquivo inclui todos os cenários de sucesso e erro identificados para o módulo de curso.
 
-*  As evidências dos testes estão no formato MP4 diponíveis em [Exclusao_evidencias_testes](https://drive.google.com/drive/folders/1DhZZGkWEKU6X57vjNlFpELjpGoQSjIzn?usp=sharing).
+*  As evidências dos testes estão no formato MP4 diponíveis em [Listar_evidencias_testes](https://drive.google.com/drive/folders/1P15KMGwj5qnqgN2Y2AtVcZlitU25iE9j?usp=sharing).
 
-* O passo-a-passo para execução de cada caso de teste esta dísponível em [Exclusao_passo_a_passo_execução_caso_de_testes](https://docs.google.com/document/d/15BxOVWHtop44lK7349QxKgNtP41sifY-gJMIBzG5-7w/edit?usp=sharing).
+* O passo-a-passo para execução de cada caso de teste esta dísponível em [Listar_passo_a_passo_execução_caso_de_testes](https://docs.google.com/document/d/1CMm4OrhbqmLVGDWvfgPHrnGcly3_NrJ0iL6kN2gukxQ/edit?usp=sharing).
 
 
 
