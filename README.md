@@ -93,32 +93,66 @@ Casos de Teste em Gherkin
 >    Garantir que os cursos recém-cadastrados apareçam no início da lista e que todas as informações sejam exibidas corretamente, melhorando a experiência de gerenciamento dos cursos.
 
 
-## Descrição de Bugs Identificados
+## Descrição de um Bug Identificado
 
-**Bug:** Erro 404 ao tentar acessar a página de exclusão de curso
+**Bug:** Problema ao tentar excluir um curso
 
 **Passos para Reproduzir:**
 1. Acesse a plataforma Beedoo QA Challenge.
 2. Navegue até a página "Listar Cursos".
 3. Clique no botão "Excluir" próximo a qualquer curso listado.
 
+**Comportamento Observado:**
+- Ao clicar no botão "Excluir", a mensagem "Curso excluído com sucesso" aparece, mas o curso não é removido da lista.
+- Cada vez que o botão "Excluir" é clicado, um número de contagem vermelho aparece ao lado da mensagem, indicando o número de vezes que a exclusão foi tentada.
+
 **Gravidade:** Alta
 
-**Causa Provável:** O link de exclusão de curso está incorreto ou o endpoint correspondente não está implementado corretamente no servidor.
+**Causa Provável:** O endpoint de exclusão de curso no servidor pode estar incorreto ou não implementado corretamente, ou há um problema no front-end que impede a remoção visual do curso.
 
-**Impacto:** Os usuários não conseguem excluir cursos, o que afeta a capacidade de gerenciamento de conteúdo na plataforma.
+**Impacto:** Os usuários não conseguem excluir cursos, o que compromete a capacidade de gerenciamento de conteúdo na plataforma e pode levar a confusão e frustração.
 
 ## Vulnerabilidades na Criação de Curso
 
 **Vulnerabilidades Identificadas:**
-1. **Ausência de Limites de Caracteres:** Todos os campos de texto permitem a inserção de um número ilimitado de caracteres, o que pode causar problemas de layout e desempenho.
-2. **Validação Inadequada de Datas:** Permite inserir datas de início em anos anteriores ao atual e datas de término que vêm antes da data de início.
-3. **Campo Número de Vagas:** Permite inserir valores negativos, zero ou valores excessivamente altos.
-4. **Campos Obrigatórios:** Permite salvar o curso sem preencher campos obrigatórios como nome do curso, descrição, instrutor, e tipo de curso.
-5. **Campos Numéricos e Textuais:** Permite que campos textuais como nome do curso e descrição sejam preenchidos apenas com números ou caracteres especiais.
 
-**Técnicas para Identificar Outras Potenciais Vulnerabilidades:**
-1. **Teste de Fuzzing:** Enviar grandes quantidades de dados aleatórios para o sistema para identificar falhas.
-2. **Análise Estática de Código:** Usar ferramentas automatizadas para analisar o código fonte e identificar vulnerabilidades.
-3. **Revisão de Código:** Realizar revisões manuais de código para detectar possíveis pontos fracos.
-4. **Teste de Penetração:** Simular ataques maliciosos para identificar brechas de segurança.
+1. **Ausência de Limites de Caracteres:**
+   - **Descrição:** Todos os campos de texto permitem a inserção de um número ilimitado de caracteres.
+   - **Impacto:** Pode causar problemas de layout, como o aumento desproporcional das caixas de texto, resultando em cursos que sobrepõem uns aos outros. Também pode afetar o desempenho do sistema.
+   - **Exemplo:** Quando um nome ou descrição de curso muito longo é inserido, a "caixa" que contém o curso aumenta, levando a sobreposição com outros cursos ao lado.
+
+2. **Validação Inadequada de Datas:**
+   - **Descrição:** Permite inserir datas de início em anos anteriores ao atual e datas de término que vêm antes da data de início.
+   - **Impacto:** Pode resultar em informações inválidas e cronogramas inconsistentes, causando confusão para os usuários.
+   - **Exemplo:** Um curso com data de início em 2022 e data de término em 2021 pode ser salvo.
+
+3. **Campo Número de Vagas:**
+   - **Descrição:** Permite inserir valores negativos, zero ou valores excessivamente altos.
+   - **Impacto:** Pode resultar em informações inválidas, afetando a gestão de inscrições e logística do curso.
+   - **Exemplo:** Um curso pode ser salvo com -5 vagas ou 0 vagas.
+
+4. **Campos Obrigatórios:**
+   - **Descrição:** Permite salvar o curso sem preencher campos obrigatórios como nome do curso, descrição, instrutor, e tipo de curso.
+   - **Impacto:** Pode levar a dados incompletos ou inválidos, dificultando a identificação e gestão dos cursos.
+   - **Exemplo:** Um curso pode ser salvo sem nome do instrutor ou sem especificar se é online ou presencial.
+
+5. **Campos Numéricos e Textuais:**
+   - **Descrição:** Permite que campos textuais como nome do curso e descrição sejam preenchidos apenas com números ou caracteres especiais.
+   - **Impacto:** Pode resultar em dados não informativos e difíceis de interpretar.
+   - **Exemplo:** Um curso pode ser salvo com o nome "12345" ou "!!!@@@".
+
+**Técnicas para Identificar Outras Potenciais Vulnerabilidades em uma Plataforma Web:**
+
+1. **Teste de Fuzzing:** Enviar grandes quantidades de dados aleatórios, incluindo strings maliciosas, para o sistema web através dos formulários para identificar falhas. Focar especialmente em entradas como campos de texto, URLs e parâmetros de API.
+
+2. **Análise Estática de Código:** Usar ferramentas automatizadas específicas para análise de código web, como SonarQube, para identificar vulnerabilidades como XSS (Cross-Site Scripting), SQL Injection, e outros tipos de ataques comuns em aplicações web.
+
+3. **Revisão de Código:** Realizar revisões manuais do código, focando em áreas críticas como validação de entrada, autenticação, autorização e manipulação de dados. Procure por práticas de codificação seguras e uso correto de bibliotecas e frameworks web.
+
+4. **Teste de Penetração (Pentest):** Simular ataques maliciosos específicos para aplicações web, como SQL Injection, XSS, CSRF (Cross-Site Request Forgery), e outras vulnerabilidades OWASP Top 10. Utilizar ferramentas como OWASP ZAP, Burp Suite, e Kali Linux para realizar esses testes.
+
+5. **Varredura de Vulnerabilidades (Vulnerability Scanning):** Utilizar ferramentas de varredura como Nessus, OpenVAS, e Qualys para detectar vulnerabilidades conhecidas na infraestrutura web, como servidores, bancos de dados, e componentes de rede.
+
+6. **Monitoramento de Segurança:** Implementar e monitorar logs de segurança para detectar atividades suspeitas e anômalas. Ferramentas como Splunk e ELK Stack podem ser úteis para análise de logs e detecção de intrusões.
+
+7. **Verificação de Configurações de Segurança:** Revisar e testar as configurações de segurança do servidor web, banco de dados, e serviços de terceiros. Assegurar que as práticas recomendadas, como HTTPS, CORS (Cross-Origin Resource Sharing) corretamente configurado, e políticas de segurança de conteúdo (CSP), estejam implementadas.
