@@ -17,7 +17,7 @@ Critérios de Aceitação:
 
 * Os casos de teste foram escritos em Gherkin e estão disponíveis no arquivo [Casos_de_Testes_Cadastro_de_Cursos]([gherkin/test_cases.feature](https://docs.google.com/spreadsheets/d/1WVsvQlN5Ayz0i4YyX3plAKyk3aG8yjqyn_LRLnXQLEI/edit?usp=sharing)). Este arquivo inclui todos os cenários de sucesso e erro identificados para o módulo de curso.
 
-*  As evidências dos testes estão no formato MP4 diponíveis em [Evidencias_testes_cadastro_cursos](https://drive.google.com/drive/folders/1JGjZH-sndG1ZcPUy0zZ9iW4hUZMRe5qc?usp=sharing).
+*  As evidências dos testes estão no formato MP4 diponíveis em [Cadastro_evidencias_testes](https://drive.google.com/drive/folders/1JGjZH-sndG1ZcPUy0zZ9iW4hUZMRe5qc?usp=sharing).
 
 * O passo-a-passo para execução de cada caso de teste esta dísponível em [Cadastro_passo_a_passo_execução_caso_de_testes](https://docs.google.com/document/d/1nelHOfyhvDeSziBeJ74c3qIh2a0NvcLkYMbjiEE9M7Q/edit?usp=sharing).
 
@@ -36,7 +36,7 @@ Casos de Teste em Gherkin
 
 * Os casos de teste foram escritos em Gherkin e estão disponíveis no arquivo [Casos_de_Testes_Exclusão_de_Curso](https://docs.google.com/spreadsheets/d/1h6Naz-2Gqw3Zp-Ke-nUdtrQsDuFq6QVWJcFdLhnJjQ8/edit?usp=sharing). Este arquivo inclui todos os cenários de sucesso e erro identificados para o módulo de curso.
 
-*  As evidências dos testes estão no formato MP4 diponíveis em [Evidencias_testes_exclusao_cursos](https://drive.google.com/drive/folders/1DhZZGkWEKU6X57vjNlFpELjpGoQSjIzn?usp=sharing).
+*  As evidências dos testes estão no formato MP4 diponíveis em [Exclusao_evidencias_testes](https://drive.google.com/drive/folders/1DhZZGkWEKU6X57vjNlFpELjpGoQSjIzn?usp=sharing).
 
 * O passo-a-passo para execução de cada caso de teste esta dísponível em [Exclusao_passo_a_passo_execução_caso_de_testes](https://docs.google.com/document/d/15BxOVWHtop44lK7349QxKgNtP41sifY-gJMIBzG5-7w/edit?usp=sharing).
 
