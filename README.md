@@ -8,10 +8,20 @@ Descrição: Como instrutor, quero cadastrar um curso na plataforma Beedoo QA Ch
 
 Critérios de Aceitação:
 
-* O formulário de criação de curso deve ter os campos: Nome do curso, Descrição do curso, Instrutor, Url da imagem de capa, Data de início, Data de fim, Número de vagas e Tipo de curso.
+* O formulário de criação de curso deve ter os campos: Nome do curso, Descrição do curso, Instrutor, URL da imagem de capa, Data de início, Data de fim, Número de vagas e Tipo de curso.
 * Todos os campos são obrigatórios.
 * A Data de Início deve ser anterior à Data de Término.
-* Após a criação bem-sucedida, deve aparecer um flash message com a mensagem "curso cadastrado com sucesso" e o curso deve ser listado na página listar cursos. 
+* Após a criação bem-sucedida, deve aparecer uma mensagem "curso cadastrado com sucesso" e o curso deve ser listado na página listar cursos.
+
+> ## Como Foram Tomadas as Decisões
+> 1. **Pesquisa de Práticas Comuns:**
+>    A decisão sobre os campos obrigatórios e os critérios de aceitação foram baseadas em uma pesquisa de plataformas de cursos online populares, como Coursera, Udemy e DIO. Essas plataformas possuem campos semelhantes, garantindo que se está alinhado com padrões de mercado.
+>
+> 2. **Princípios de UX:**
+>    Garantir que todos os campos sejam obrigatórios e fornecer feedback imediato são práticas recomendadas em UX para evitar frustração do usuário e melhorar a experiência geral.
+>
+> 3. **Lógica e Validação:**
+>    A restrição de que a Data de Início deve ser anterior à Data de Término é uma validação lógica necessária para garantir a consistência e integridade dos dados do curso.
 
 ## Casos de Teste em Gherkin
 
