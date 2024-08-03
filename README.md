@@ -1,5 +1,18 @@
 # DESAFIO-BEEDOO
 
+> ## Como Foram Tomadas as Decisões
+> Por não haver requisitos a serem seguidos, cada História de usuário foi escrita segundo pesquisas e boas práticas do desenvolvimento de software.
+>
+> ## História de usuário - Cadastro de Curso
+> 1. **Pesquisa de Práticas Comuns:**
+>    A decisão sobre os campos obrigatórios e os critérios de aceitação foram baseadas em uma pesquisa de plataformas de cursos online populares, como Coursera, Udemy e DIO. Essas plataformas possuem campos semelhantes, garantindo que se está alinhado com padrões de mercado.
+>
+> 2. **Princípios de UX:**
+>    Garantir que todos os campos sejam obrigatórios e fornecer feedback imediato são práticas recomendadas em UX para evitar frustração do usuário e melhorar a experiência geral.
+>
+> 3. **Lógica e Validação:**
+>    A restrição de que a Data de Início deve ser anterior à Data de Término é uma validação lógica necessária para garantir a consistência e integridade dos dados do curso.
+
 ## História de Usuário
 
 Título: Cadastro de Curso
@@ -12,16 +25,6 @@ Critérios de Aceitação:
 * Todos os campos são obrigatórios.
 * A Data de Início deve ser anterior à Data de Término.
 * Após a criação bem-sucedida, deve aparecer uma mensagem "curso cadastrado com sucesso" e o curso deve ser listado na página listar cursos.
-
-> ## Como Foram Tomadas as Decisões
-> 1. **Pesquisa de Práticas Comuns:**
->    A decisão sobre os campos obrigatórios e os critérios de aceitação foram baseadas em uma pesquisa de plataformas de cursos online populares, como Coursera, Udemy e DIO. Essas plataformas possuem campos semelhantes, garantindo que se está alinhado com padrões de mercado.
->
-> 2. **Princípios de UX:**
->    Garantir que todos os campos sejam obrigatórios e fornecer feedback imediato são práticas recomendadas em UX para evitar frustração do usuário e melhorar a experiência geral.
->
-> 3. **Lógica e Validação:**
->    A restrição de que a Data de Início deve ser anterior à Data de Término é uma validação lógica necessária para garantir a consistência e integridade dos dados do curso.
 
 ## Casos de Teste em Gherkin
 
