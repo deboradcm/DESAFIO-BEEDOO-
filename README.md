@@ -91,3 +91,34 @@ Casos de Teste em Gherkin
 >
 > 3. **Foco na Experiência do Usuário:**
 >    Garantir que os cursos recém-cadastrados apareçam no início da lista e que todas as informações sejam exibidas corretamente, melhorando a experiência de gerenciamento dos cursos.
+
+
+## Descrição de Bugs Identificados
+
+**Bug:** Erro 404 ao tentar acessar a página de exclusão de curso
+
+**Passos para Reproduzir:**
+1. Acesse a plataforma Beedoo QA Challenge.
+2. Navegue até a página "Listar Cursos".
+3. Clique no botão "Excluir" próximo a qualquer curso listado.
+
+**Gravidade:** Alta
+
+**Causa Provável:** O link de exclusão de curso está incorreto ou o endpoint correspondente não está implementado corretamente no servidor.
+
+**Impacto:** Os usuários não conseguem excluir cursos, o que afeta a capacidade de gerenciamento de conteúdo na plataforma.
+
+## Vulnerabilidades na Criação de Curso
+
+**Vulnerabilidades Identificadas:**
+1. **Ausência de Limites de Caracteres:** Todos os campos de texto permitem a inserção de um número ilimitado de caracteres, o que pode causar problemas de layout e desempenho.
+2. **Validação Inadequada de Datas:** Permite inserir datas de início em anos anteriores ao atual e datas de término que vêm antes da data de início.
+3. **Campo Número de Vagas:** Permite inserir valores negativos, zero ou valores excessivamente altos.
+4. **Campos Obrigatórios:** Permite salvar o curso sem preencher campos obrigatórios como nome do curso, descrição, instrutor, e tipo de curso.
+5. **Campos Numéricos e Textuais:** Permite que campos textuais como nome do curso e descrição sejam preenchidos apenas com números ou caracteres especiais.
+
+**Técnicas para Identificar Outras Potenciais Vulnerabilidades:**
+1. **Teste de Fuzzing:** Enviar grandes quantidades de dados aleatórios para o sistema para identificar falhas.
+2. **Análise Estática de Código:** Usar ferramentas automatizadas para analisar o código fonte e identificar vulnerabilidades.
+3. **Revisão de Código:** Realizar revisões manuais de código para detectar possíveis pontos fracos.
+4. **Teste de Penetração:** Simular ataques maliciosos para identificar brechas de segurança.
