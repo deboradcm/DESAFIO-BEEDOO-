@@ -1,6 +1,6 @@
 # DESAFIO-BEEDOO
 
-## História de Usuário
+## Histórias de Usuários
 
 ### Título: Cadastro de Curso
 
@@ -58,14 +58,11 @@ Casos de Teste em Gherkin
 
 * O passo-a-passo para execução de cada caso de teste esta dísponível em [Listar_passo_a_passo_execução_caso_de_testes](https://docs.google.com/document/d/1CMm4OrhbqmLVGDWvfgPHrnGcly3_NrJ0iL6kN2gukxQ/edit?usp=sharing).
 
-
-
-
-
 > ## Como Foram Tomadas as Decisões
-> Por não haver requisitos a serem seguidos, cada História de usuário foi escrita segundo pesquisas e boas práticas do desenvolvimento de software.
->
-> ## História de usuário - Cadastro de Curso
+> 
+> Por não haver requisitos a serem seguidos, cada história de usuário foi escrita segundo pesquisas e boas práticas do desenvolvimento de software.
+> 
+> ### História de Usuário - Cadastro de Curso
 > 1. **Pesquisa de Práticas Comuns:**
 >    A decisão sobre os campos obrigatórios e os critérios de aceitação foram baseadas em uma pesquisa de plataformas de cursos online populares, como Coursera, Udemy e DIO. Essas plataformas possuem campos semelhantes, garantindo que se está alinhado com padrões de mercado.
 >
@@ -74,3 +71,23 @@ Casos de Teste em Gherkin
 >
 > 3. **Lógica e Validação:**
 >    A restrição de que a Data de Início deve ser anterior à Data de Término é uma validação lógica necessária para garantir a consistência e integridade dos dados do curso.
+> 
+> ### História de Usuário - Exclusão de Curso
+> 1. **Análise de Requisitos:**
+>    Avaliei a funcionalidade atual do módulo de curso e identifiquei a necessidade de uma funcionalidade que permitisse a remoção de cursos desatualizados ou desnecessários.
+>
+> 2. **Identificação de Problemas:**
+>    Realizei testes exploratórios para identificar problemas existentes na funcionalidade de exclusão de cursos, garantindo que todas as interações do usuário fossem cobertas.
+>
+> 3. **Foco na Experiência do Usuário:**
+>    Incluir uma caixa de diálogo para confirmação de exclusão é uma prática recomendada para evitar exclusões acidentais, melhorando a experiência e a segurança do usuário.
+> 
+> ### História de Usuário - Listar Cursos
+> 1. **Utilização de Boas Práticas:**
+>    Segui boas práticas de QA para garantir a criação de histórias de usuários e casos de teste abrangentes e relevantes, alinhando a funcionalidade com padrões de mercado.
+>
+> 2. **Análise de Requisitos:**
+>    Avaliei a necessidade de uma listagem completa e precisa dos cursos cadastrados para facilitar a gestão e visualização dos cursos pelo administrador.
+>
+> 3. **Foco na Experiência do Usuário:**
+>    Garantir que os cursos recém-cadastrados apareçam no início da lista e que todas as informações sejam exibidas corretamente, melhorando a experiência de gerenciamento dos cursos.
