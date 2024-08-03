@@ -19,7 +19,7 @@ Critérios de Aceitação:
 
 *  As evidências dos testes estão no formato MP4 diponíveis em [Evidencias_testes_cadastro_cursos](https://drive.google.com/drive/folders/1JGjZH-sndG1ZcPUy0zZ9iW4hUZMRe5qc?usp=sharing).
 
-* O passo-a-passo para execução de cada caso de teste esta dísponível em [Passo_a_passo_execução_caso_de_testes_cadastro](https://docs.google.com/document/d/1nelHOfyhvDeSziBeJ74c3qIh2a0NvcLkYMbjiEE9M7Q/edit?usp=sharing).
+* O passo-a-passo para execução de cada caso de teste esta dísponível em [Cadastro_passo_a_passo_execução_caso_de_testes](https://docs.google.com/document/d/1nelHOfyhvDeSziBeJ74c3qIh2a0NvcLkYMbjiEE9M7Q/edit?usp=sharing).
 
 ### Título: Exclusão de Curso
 
@@ -34,11 +34,11 @@ Critérios de Aceitação:
 
 Casos de Teste em Gherkin
 
-* Os casos de teste foram escritos em Gherkin e estão disponíveis no arquivo [Casos_de_Testes_Exclusão_de_Curso](). Este arquivo inclui todos os cenários de sucesso e erro identificados para o módulo de curso.
+* Os casos de teste foram escritos em Gherkin e estão disponíveis no arquivo [Casos_de_Testes_Exclusão_de_Curso](https://docs.google.com/spreadsheets/d/1h6Naz-2Gqw3Zp-Ke-nUdtrQsDuFq6QVWJcFdLhnJjQ8/edit?usp=sharing). Este arquivo inclui todos os cenários de sucesso e erro identificados para o módulo de curso.
 
 *  As evidências dos testes estão no formato MP4 diponíveis em [Evidencias_testes_exclusao_cursos]().
 
-* O passo-a-passo para execução de cada caso de teste esta dísponível em [Passo_a_passo_execução_caso_de_testes_exclusao]().
+* O passo-a-passo para execução de cada caso de teste esta dísponível em [Exclusao_passo_a_passo_execução_caso_de_testes](https://docs.google.com/document/d/15BxOVWHtop44lK7349QxKgNtP41sifY-gJMIBzG5-7w/edit?usp=sharing).
 
 
 
