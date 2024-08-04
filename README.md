@@ -90,7 +90,7 @@ Casos de Teste em Gherkin
 >    Garantir que os cursos recém-cadastrados apareçam no início da lista e que todas as informações sejam exibidas corretamente, melhorando a experiência de gerenciamento dos cursos.
 
 
-## Descrição de um Bug Identificado
+## Relatório de Bugs Identificados
 
 **Bug:** Problema ao tentar excluir um curso
 
