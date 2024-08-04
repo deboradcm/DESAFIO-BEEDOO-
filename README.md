@@ -67,7 +67,7 @@ Casos de Teste em Gherkin
 >    A decisão sobre os campos obrigatórios e os critérios de aceitação foram baseadas em uma pesquisa de plataformas de cursos online populares, como Coursera, Udemy e DIO. Essas plataformas possuem campos semelhantes, garantindo que se está alinhado com padrões de mercado.
 >
 > 2. **Princípios de UX:**
->    Garantir que todos os campos sejam obrigatórios e fornecer feedback imediato são práticas recomendadas em UX para evitar frustração do usuário e melhorar a experiência geral.
+>    Garantir que apenas os campos essenciais sejam obrigatórios e fornecer feedback imediato são práticas recomendadas em UX para evitar frustração do usuário e melhorar a experiência geral. E por serem poucos os campos e todos com sua relevância, julguei que seria interessante que todos fossem obrigatórios.
 >
 > 3. **Lógica e Validação:**
 >    A restrição de que a Data de Início deve ser anterior à Data de Término é uma validação lógica necessária para garantir a consistência e integridade dos dados do curso.
@@ -83,13 +83,10 @@ Casos de Teste em Gherkin
 >    Incluir uma caixa de diálogo para confirmação de exclusão é uma prática recomendada para evitar exclusões acidentais, melhorando a experiência e a segurança do usuário.
 > 
 > ### História de Usuário - Listar Cursos
-> 1. **Utilização de Boas Práticas:**
->    Segui boas práticas de QA para garantir a criação de histórias de usuários e casos de teste abrangentes e relevantes, alinhando a funcionalidade com padrões de mercado.
->
-> 2. **Análise de Requisitos:**
+> 1. **Análise de Requisitos:**
 >    Avaliei a necessidade de uma listagem completa e precisa dos cursos cadastrados para facilitar a gestão e visualização dos cursos pelo administrador.
 >
-> 3. **Foco na Experiência do Usuário:**
+> 2. **Foco na Experiência do Usuário:**
 >    Garantir que os cursos recém-cadastrados apareçam no início da lista e que todas as informações sejam exibidas corretamente, melhorando a experiência de gerenciamento dos cursos.
 
 
@@ -98,8 +95,7 @@ Casos de Teste em Gherkin
 **Bug:** Problema ao tentar excluir um curso
 
 **Passos para Reproduzir:**
-1. Acesse a plataforma Beedoo QA Challenge.
-2. Navegue até a página "Listar Cursos".
+1. Acesse a plataforma [Beedoo QA Challenge](https://creative-sherbet-a51eac.netlify.app/).
 3. Clique no botão "Excluir" próximo a qualquer curso listado.
 
 **Comportamento Observado:**
