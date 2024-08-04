@@ -60,7 +60,7 @@ Casos de Teste em Gherkin
 
 > ## Como Foram Tomadas as Decisões
 > 
-> Por não haver requisitos a serem seguidos, cada história de usuário foi escrita segundo pesquisas e boas práticas do desenvolvimento de software.
+> Por não haver requisitos preestabelecidos a serem seguidos, cada história de usuário foi escrita segundo pesquisas e boas práticas do desenvolvimento de software.
 > 
 > ### História de Usuário - Cadastro de Curso
 > 1. **Pesquisa de Práticas Comuns:**
